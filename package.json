@@ -1,11 +1,14 @@
 {
   "name": "travellife",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/boile/travel-life.git"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
