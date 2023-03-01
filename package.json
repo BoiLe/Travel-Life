@@ -2,7 +2,7 @@
   "name": "travellife",
   "version": "1.0.0",
   "repository": {
-    "url": "git+https://github.com/boile/travel-life.git"
+    "url": "https://github.com/boile/travel-life.git"
   },
   "description": "",
   "main": "index.js",
