@@ -3,6 +3,7 @@ const config = require("./webpack.config.js");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
+
 module.exports = merge(config, {
     mode: "production",
     optimization: {

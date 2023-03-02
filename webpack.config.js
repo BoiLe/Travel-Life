@@ -2,6 +2,7 @@ const path = require('path');
 var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin');
 module.exports = {
     mode: "development",
     stats: {
@@ -92,7 +93,7 @@ module.exports = {
             inject: "body",
             chunks: ['index'],
         }),
-        // new BaseHrefWebpackPlugin({ baseHref: '/' }),
+        new BaseHrefWebpackPlugin({ baseHref: '/' }),
         new MiniCssExtractPlugin({
             filename: "css/[name].min.css",
           }),
