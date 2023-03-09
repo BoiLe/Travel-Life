@@ -15,7 +15,7 @@ module.exports = {
         },
     },
     output: {
-        publicPath: "/",
+        publicPath: "",
         path: path.resolve(__dirname, "dist"),
         clean: true,
     },
@@ -93,7 +93,7 @@ module.exports = {
             inject: "body",
             chunks: ['index'],
         }),
-        new BaseHrefWebpackPlugin({ baseHref: '/' }),
+        // new BaseHrefWebpackPlugin({ baseHref: '/' }),
         new MiniCssExtractPlugin({
             filename: "css/[name].min.css",
           }),
